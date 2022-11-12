@@ -3,7 +3,7 @@
     <img src="<?= BASE_URL ?>/assets/img/razor.png" alt="razor" class="razor">
     <div class="hero-text" data-aos="fade-down" data-aos-duration="1000">
         <h1 class="hidden-element">Oblock barbershop</h1>
-        <img src="<?= BASE_URL ?>/assets/img/logo2.png" alt="O'BLOCK" class="logo">
+        <img src="<?= BASE_URL ?>/assets/img/logo2.png" alt="O-Block" class="logo">
         <div class="hidden-element">Barbershop</div>
     </div>
     <div class="btn-container"  data-aos="fade-left" data-aos-duration="1000" data-aos-duration="300" data-aos-offset="-500">
@@ -133,5 +133,5 @@
 </section>
 
 <section class="largelogo" data-aos="fade-down" data-aos-duration="1000">
-    <img src="<?= BASE_URL ?>/assets/img/logo1.png" alt="O'BLOCK" class="logo">
+    <img src="<?= BASE_URL ?>/assets/img/logo1.png" alt="O-Block" class="logo">
 </section>
