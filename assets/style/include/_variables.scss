@@ -1,0 +1,39 @@
+/* COLORS */
+$primary0: #f0ad00;
+$primary1: #f0c300;
+$primary2: #f1d761;
+$primary3: #ffefab;
+$primary4: #fff6ce;
+$primary5: #fdf9e8;
+
+$black1: #212121;
+$black2: #666;
+$black3: #878787;
+
+$error: #d01212;
+$errorBg: #ffe1e1;
+
+$success: #418f36;
+$successBg: #dbffd6;
+
+$borderColor: #ddd;
+
+/* FONTS */
+$primaryFont: "Progress";
+$secondaryFont: "Bohemian";
+
+// fontface generator - https://google-webfonts-helper.herokuapp.com
+
+/* Bohemian */
+@font-face {
+  font-family: "Bohemian";
+  font-style: normal;
+  src: url("../fonts/bohemian.ttf") format("truetype");
+}
+
+/* Progress */
+@font-face {
+  font-family: "Progress";
+  font-style: normal;
+  src: url("../fonts/progress.ttf") format("truetype");
+}
