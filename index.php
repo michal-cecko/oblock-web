@@ -22,7 +22,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O-Block | Barbershop</title>
+    <title>O-Block | Barbershop Žilina</title>
     <meta name="author" content="Synapps.sk"/>
     <meta name="description" content="O-block je pánske holičstvo, v ktorom ponúkame okrem služieb a relaxu aj skutočný zážitok zo strihania. Okrem tradičných služieb u nás nájdete aj služby ako hot alebo cold towel, depiláciu chĺpkov, opálenie uší alebo úpravu obočia. Taktiež používame a predávame kvalitnú pánsku kozmetiku. Stačí si už len rezervovať termín."/>
     <meta name="keywords" content="Oblock, O block, O-Block, O' Block žilina, barbershop žilina, barbershop mirage, barber žilina, barber mirage, Pánske holičstvo, Pánske kaderníctvo, Pánsky kaderník, kaderník žilina, kaderník mirage">

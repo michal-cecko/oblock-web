@@ -1,17 +1,18 @@
 <section class="hero" id="home">
-    <img src="<?= BASE_URL ?>/assets/img/emblem.png" alt="emblem" class="emblem">
-    <img src="<?= BASE_URL ?>/assets/img/razor.png" alt="razor" class="razor">
+    <img src="/assets/img/emblem.png" alt="emblem" class="emblem">
+    <img src="/assets/img/razor.png" alt="razor" class="razor">
     <div class="hero-text" data-aos="fade-down" data-aos-duration="1000">
         <h1 class="hidden-element">Oblock barbershop</h1>
-        <img src="<?= BASE_URL ?>/assets/img/logo2.png" alt="O-Block" class="logo">
+        <img src="/assets/img/logo2.png" alt="O-Block" class="logo">
         <div class="hidden-element">Barbershop</div>
     </div>
-    <div class="btn-container"  data-aos="fade-left" data-aos-duration="1000" data-aos-duration="300" data-aos-offset="-500">
+    <div class="btn-container" data-aos="fade-left" data-aos-duration="1000" data-aos-duration="300"
+         data-aos-offset="-500">
         <a href="<?= $bookio ?>" class="btn btn-secondary btn-large">Rezervovať</a>
     </div>
 </section>
 
-<section class="about" id="o-nas"  data-aos="fade-down" data-aos-duration="1000">
+<section class="about" id="o-nas" data-aos="fade-down" data-aos-duration="1000">
     <div class="about-text">
         <h2 class="heading left">O Nás</h2>
         <p class="text">
@@ -19,112 +20,114 @@
             V KTOROM PONÚKAME OKREM SLUŽIEB A RELAXU AJ SKUTOČNÝ ZÁŽITOK ZO STRIHANIA.<br><br>
             OKREM TRADIČNÝCH SLUŽIEB U NÁS NÁJDETE AJ SLUŽBY AKO HOT ALEBO COLD TOWEL, DEPILÁCIU CHĹPKOV, OPÁLENIE UŠÍ
             ALEBO ÚPRAVU OBOČIA.<br><br>
-            TAKTIEŽ POUŽÍVAME A PREDÁVAME KVALITNÚ PÁNSKU KOZMETIKU. STAČÍ SI UŽ LEN <a href="<?= $bookio ?>">REZERVOVAŤ TERMÍN</a>.
+            TAKTIEŽ POUŽÍVAME A PREDÁVAME KVALITNÚ PÁNSKU KOZMETIKU. STAČÍ SI UŽ LEN <a href="<?= $bookio ?>">REZERVOVAŤ
+                TERMÍN</a>.
         </p>
     </div>
-    <img src="<?= BASE_URL ?>/assets/img/razor.png" alt="razor" class="razor">
+    <img src="/assets/img/razor.png" alt="razor" class="razor">
     <div class="img-1">
-        <img src="<?= BASE_URL ?>/assets/img/oblock_1.jpg" alt="O nás - fotka č.1"/>
+        <img src="/assets/img/oblock_1.jpg" alt="O nás - fotka č.1"/>
     </div>
     <div class="img-2">
-        <img src="<?= BASE_URL ?>/assets/img/oblock_2.jpg" alt="O nás - fotka č.2"/>
+        <img src="/assets/img/oblock_2.jpg" alt="O nás - fotka č.2"/>
     </div>
 </section>
 
-<section class="sluzby userSelectNone" id="sluzby"  data-aos="fade-down" data-aos-duration="1000" >
+
+<?php
+
+$cards = [
+    [
+        "icon" => "razor_icon.png",
+        'services' => [
+            ['text' => 'Úprava brady', 'price' => 12, 'desc' => '(Konzultácia, úprava, zaholenie kontúr, styling, servis)'],
+            ['text' => 'Fullshaving', 'price' => 15, 'desc' => '(Konzultácia, naparenie, holenie, ošetrenie)']
+        ]
+    ],
+    [
+        "icon" => "scissors_icon.png",
+        'services' => [
+            ['text' => 'Pánsky strih', 'price' => 18, 'desc' => '(Konzultácia, strih, umytie, styling, servis)'],
+            ['text' => 'Express strih', 'price' => 10, 'desc' => '(Konzultácia, strih)']
+        ]
+    ],
+    [
+        "icon" => "mustache.png",
+        'services' => [
+            ['text' => 'Combo štandard', 'price' => 26, 'desc' => '(Konzultácia, strih, úprava brady, umytie, styling, servis)'],
+            ['text' => 'Combo vip', 'price' => 33, 'desc' => '(Konzultácia, strih, úprava, HOT TOWEL, úprava brady, ošetrenie kozmetikou, umytie, styling, servis)']
+        ]
+    ],
+    [
+        "icon" => "shampoo.png",
+        'services' => [
+            ['text' => 'EXTRA X', 'price' => 5, 'desc' => '(umytie, masáž hlavy, styling)'],
+            ['text' => 'EXTRA Y', 'price' => 3, 'desc' => '(Depilácia chĺpkov, úprava obočia, opalovanie uší)']
+        ]
+    ],
+];
+
+$cardsNew = [
+    [
+        "icon" => "razor_icon.png",
+        'services' => [
+            ['text' => 'Úprava brady', 'price' => 16, 'desc' => '(Konzultácia, úprava, zaholenie kontúr, styling, servis)'],
+            ['text' => 'Fullshaving', 'price' => 17, 'desc' => '(Konzultácia, naparenie, holenie, ošetrenie)']
+        ]
+    ],
+    [
+        "icon" => "scissors_icon.png",
+        'services' => [
+            ['text' => 'Pánsky strih', 'price' => 22, 'desc' => '(Konzultácia, strih, umytie, styling, servis)'],
+            ['text' => 'Express strih', 'price' => 14, 'desc' => '(Konzultácia, strih)']
+        ]
+    ],
+    [
+        "icon" => "mustache.png",
+        'services' => [
+            ['text' => 'Combo štandard', 'price' => 30, 'desc' => '(Konzultácia, strih, úprava brady, umytie, styling, servis)'],
+            ['text' => 'Combo vip', 'price' => 37, 'desc' => '(Konzultácia, strih, úprava, HOT TOWEL, úprava brady, ošetrenie kozmetikou, umytie, styling, servis)']
+        ]
+    ],
+    [
+        "icon" => "shampoo.png",
+        'services' => [
+            ['text' => 'EXTRA X', 'price' => 5, 'desc' => '(umytie, masáž hlavy, styling)'],
+            ['text' => 'EXTRA Y', 'price' => 3, 'desc' => '(Depilácia chĺpkov, úprava obočia, opalovanie uší)']
+        ]
+    ],
+];
+
+$selectedCards = strtotime("2024-01-01 00:00:00") > time() ? $cards : $cardsNew;
+
+?>
+
+<section class="sluzby userSelectNone" id="sluzby" data-aos="fade-down" data-aos-duration="1000">
     <h2 class="heading center">Služby</h2>
     <div class="cards-container">
         <div class="cards">
+            <?php foreach ($selectedCards as $card): ?>
             <div class="card">
-                <img src="<?= BASE_URL ?>/assets/img/razor_icon.png" class="icon">
+                <img src="/assets/img/<?= $card['icon'] ?>" class="icon">
+                <?php foreach ($card['services'] as $service) : ?>
                 <div class="sluzba">
                     <div class="head">
-                        <div class="name">Úprava brady</div>
-                        <div class="price"><span class="dash"></span>12€</div>
+                        <div class="name"><?= $service['text'] ?></div>
+                        <div class="price"><span class="dash"></span><?= $service['price'] ?>€</div>
                     </div>
                     <div class="text">
-                        (Konzultácia, úprava, zaholenie kontúr, styling, servis)
+                        <?= $service['desc'] ?>
                     </div>
                 </div>
-                <div class="sluzba">
-                    <div class="head">
-                        <div class="name">Fullshaving</div>
-                        <div class="price"><span class="dash"></span>15€</div>
-                    </div>
-                    <div class="text">
-                        (Konzultácia, naparenie, holenie, ošetrenie)
-                    </div>
-                </div>
+                <?php endforeach ?>
             </div>
-            <div class="card">
-                <img src="<?= BASE_URL ?>/assets/img/scissors_icon.png" class="icon">
-                <div class="sluzba">
-                    <div class="head">
-                        <div class="name">Pánsky strih</div>
-                        <div class="price"><span class="dash"></span>18€</div>
-                    </div>
-                    <div class="text">
-                        (Konzultácia, strih, umytie, styling, servis)
-                    </div>
-                </div>
-                <div class="sluzba">
-                    <div class="head">
-                        <div class="name">Express strih</div>
-                        <div class="price"><span class="dash"></span>10€</div>
-                    </div>
-                    <div class="text">
-                        (Konzultácia, strih)
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <img src="<?= BASE_URL ?>/assets/img/mustache.png" class="icon">
-                <div class="sluzba">
-                    <div class="head">
-                        <div class="name">Combo štandard</div>
-                        <div class="price"><span class="dash"></span>26€</div>
-                    </div>
-                    <div class="text">
-                        (Konzultácia, strih, úprava brady, umytie, styling, servis)
-                    </div>
-                </div>
-                <div class="sluzba">
-                    <div class="head">
-                        <h4 class="name">Combo vip</h4>
-                        <div class="price"><span class="dash"></span>33€</div>
-                    </div>
-                    <div class="text">
-                        (Konzultácia, strih, úprava, HOT TOWEL, úprava brady, ošetrenie kozmetikou, umytie, styling, servis)
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <img src="<?= BASE_URL ?>/assets/img/shampoo.png" class="icon">
-                <div class="sluzba">
-                    <div class="head">
-                        <div class="name">EXTRA X</div>
-                        <div class="price"><span class="dash"></span>5€</div>
-                    </div>
-                    <div class="text">
-                        (umytie, masáž hlavy, styling)
-                    </div>
-                </div>
-                <div class="sluzba">
-                    <div class="head">
-                        <div class="name">EXTRA Y</div>
-                        <div class="price"><span class="dash"></span>3€</div>
-                    </div>
-                    <div class="text">
-                        (Depilácia chĺpkov, úprava obočia, opalovanie uší)
-                    </div>
-                </div>
-            </div>
+        <?php endforeach ?>
         </div>
         <div class="prev">
-            <?php include( "./assets/img/chevron.svg" ) ?>
+            <?php include("./assets/img/chevron.svg") ?>
         </div>
         <div class="next">
-            <?php include( "./assets/img/chevron.svg" ) ?>
+            <?php include("./assets/img/chevron.svg") ?>
         </div>
         <div class="btn-container center">
             <a href="<?= $bookio ?>" class="btn btn-secondary btn-large">Rezervovať</a>
@@ -133,5 +136,5 @@
 </section>
 
 <section class="largelogo" data-aos="fade-down" data-aos-duration="1000">
-    <img src="<?= BASE_URL ?>/assets/img/logo1.png" alt="O-Block" class="logo">
+    <img src="/assets/img/logo1.png" alt="O-Block" class="logo">
 </section>
