@@ -20,7 +20,7 @@
             <?php include("./assets/img/location.svg") ?>
             <div class="popis">
                 <div class="name">Adresa</div>
-                <div class="value">Dolný Val 3097/9<br>01001 Žilina</div>
+                <div class="value">Dolný Val 213/11<br>01001 Žilina</div>
             </div>
         </div>
         <div class="item">
